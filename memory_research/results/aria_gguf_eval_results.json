@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chit_chat_math",
+    "category": "anti_spam_chit_chat",
+    "prompt": "What is 15 * 14?",
+    "context": "",
+    "output": "230.",
+    "latency_ms": 526.707649230957,
+    "tokens": 2,
+    "tokens_per_sec": 3.7971728774400546
+  },
+  {
+    "id": "chit_chat_tree",
+    "category": "anti_spam_chit_chat",
+    "prompt": "Can you explain how a binary search tree works in one sentence?",
+    "context": "",
+    "output": "A binary search tree is a tree where each node has a value and two child nodes, with the root being the value itself.",
+    "latency_ms": 1149.092435836792,
+    "tokens": 26,
+    "tokens_per_sec": 22.626552215589413
+  },
+  {
+    "id": "memory_grounded_pet",
+    "category": "memory_grounded",
+    "prompt": "What snacks should I buy for my pet?",
+    "context": "[KNOW: pet Mochi \u2014 User's orange cat [LIKES -> Salmon Treats (pref)]]",
+    "output": "I don't have a pet, so I can't recommend snacks. but I can share that your best snacks are cat treats that your cat likes.",
+    "latency_ms": 1362.1973991394043,
+    "tokens": 30,
+    "tokens_per_sec": 22.023239817483947
+  },
+  {
+    "id": "memory_grounded_residence",
+    "category": "memory_grounded",
+    "prompt": "Where do I currently live?",
+    "context": "[KNOW: user \u2014 Primary User [LIVES_IN -> San Francisco (place)]]",
+    "output": "you're currently in San Francisco.",
+    "latency_ms": 702.521562576294,
+    "tokens": 7,
+    "tokens_per_sec": 9.964106972502782
+  }
+]

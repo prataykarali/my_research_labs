@@ -8,16 +8,7 @@
 **SLM Target:** Sub-2B parameter on-device model (e.g., Qwen2-1.5B, Phi-2, Gemma-2B)  
 **Training Strategy:** SFT (AKF Extraction) + DPO (Persona Grounding & Anti-Spam)
 
----
-
 ## Abstract
-
-Deploying Small Language Models (SLMs, $\le 2\text{B}$ parameters) directly on edge hardware provides substantial privacy, zero cloud latency, and offline autonomy. However, sustaining dynamic, lifelong personal memory on-device presents a fundamental dilemma: constrained context windows ($2\text{k}$–$4\text{k}$ tokens) and sensitive attention heads mean that injecting uncurated personal memories causes catastrophic **context pollution**, prompt inflation, and conversational spam. 
-
-In this paper, we introduce **AURA-GraphRAG**, an on-device personal memory layer that maintains structured, dynamic personal knowledge while completely suppressing irrelevant memory injection. Our architecture combines:
-1. An on-device **Atomic Knowledge Fragment (AKF)** graph schema implemented on SQLite with directed ontological relations (`HAS`, `LIKES`, `OWNED_BY`, `REQUIRES`, `ABOUT`, `ENROLLED_IN`);
-2. A backward-compatible **Dual-Write Engine** writing simultaneously to nodes, edges, and legacy fact stores;
-3. **Snowflake Arctic** dense embeddings ($384$-dimensional normalized vectors);
 4. A **Two-Pass Cosine Similarity Firewall** ($\tau \ge 0.62$) that drops false-positive chit-chat memory injections to exactly **$0.0\%$**;
 5. **$1$–$2$ Hop Directed Graph Traversal** enabling multi-entity relational synthesis without flat prompt dumping;
 6. **Scoped Knowledge Partitioning** separating general personal memories from structured courses and notes (`kind='course'`, `kind='note'`);
@@ -72,7 +63,7 @@ On-device Small Language Models (SLMs) such as 1.2B–2B parameter models repres
                                              └─────────────────────────┘
 ```
 
-To resolve this, we formulate the **AURA-GraphRAG** personal memory framework, enforcing silent learning, strict firewall gating, relational graph traversal, and zero-leakage lifecycle management.
+To resolve this, we formulate the **EdgeMem** personal memory framework, enforcing silent learning, strict firewall gating, relational graph traversal, and zero-leakage lifecycle management.
 
 ---
 
@@ -517,7 +508,7 @@ The answer is a **3-Layer Memory Architecture**:
 2. **Layer 2 (Smart Ingestion + AKF Graph):** The Smart Ingestion Gate rejects $70\%$ of ephemeral noise. Accepted facts are atomized into a typed graph with Snowflake Arctic $384$-d embeddings and temporal edge invalidation.
 3. **Layer 3 (Guarded Retrieval):** Two-pass retrieval with a hard Cosine Firewall ($\tau=0.62$) and $1$–$2$ hop directed graph traversal.
 
-Across **20,000 empirical test cases** (10,000 multi-tenant + 10,000 dynamic multi-turn), AURA-GraphRAG achieves:
+Across **20,000 empirical test cases** (10,000 multi-tenant + 10,000 dynamic multi-turn), EdgeMem achieves:
 1. **$0.0\%$ Context Pollution** on open-domain conversation;
 2. **$96.7\%$ Prompt Token Savings** ($7.8$ vs. $234.0$ tokens/turn);
 3. **$84.9\%$ Dynamic Knowledge Chaining Accuracy**;

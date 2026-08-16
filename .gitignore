@@ -1,3 +1,9 @@
 *.pyc
 __pycache__/
 *.db
+Aria-model/
+models/
+*.gguf
+*.onnx
+user_databases/
+

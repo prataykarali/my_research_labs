@@ -1,0 +1,70 @@
+{
+  "capacity_compression_frontier": [
+    {
+      "compression_pct": 0.0,
+      "retained_nodes": 100,
+      "accuracy_pct": 70.0,
+      "vector_ram_kb": 38.28125
+    },
+    {
+      "compression_pct": 10.0,
+      "retained_nodes": 90,
+      "accuracy_pct": 70.0,
+      "vector_ram_kb": 34.453125
+    },
+    {
+      "compression_pct": 30.0,
+      "retained_nodes": 70,
+      "accuracy_pct": 50.0,
+      "vector_ram_kb": 26.796875
+    },
+    {
+      "compression_pct": 50.0,
+      "retained_nodes": 50,
+      "accuracy_pct": 40.0,
+      "vector_ram_kb": 19.140625
+    },
+    {
+      "compression_pct": 70.0,
+      "retained_nodes": 30,
+      "accuracy_pct": 30.0,
+      "vector_ram_kb": 11.484375
+    },
+    {
+      "compression_pct": 90.0,
+      "retained_nodes": 9,
+      "accuracy_pct": 10.0,
+      "vector_ram_kb": 3.4453125
+    }
+  ],
+  "token_budget_frontier": [
+    {
+      "token_budget_bt": 0,
+      "personalization_recall_pct": 0.0
+    },
+    {
+      "token_budget_bt": 5,
+      "personalization_recall_pct": 50.0
+    },
+    {
+      "token_budget_bt": 10,
+      "personalization_recall_pct": 95.0
+    },
+    {
+      "token_budget_bt": 20,
+      "personalization_recall_pct": 95.0
+    },
+    {
+      "token_budget_bt": 30,
+      "personalization_recall_pct": 95.0
+    },
+    {
+      "token_budget_bt": 50,
+      "personalization_recall_pct": 98.0
+    },
+    {
+      "token_budget_bt": 100,
+      "personalization_recall_pct": 98.0
+    }
+  ]
+}

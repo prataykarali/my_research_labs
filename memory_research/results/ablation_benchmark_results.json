@@ -1,0 +1,26 @@
+{
+  "System_A_Full_Dump": {
+    "multihop_accuracy_pct": 100.0,
+    "false_positive_chit_chat_pct": 100.0,
+    "avg_tokens_per_query": 234.0,
+    "total_benchmark_latency_ms": 0.014543533325195312
+  },
+  "System_B_Vector_Only": {
+    "multihop_accuracy_pct": 100.0,
+    "false_positive_chit_chat_pct": 0.0,
+    "avg_tokens_per_query": 10.010000000000002,
+    "total_benchmark_latency_ms": 307.4977397918701
+  },
+  "System_C_Graph_Only": {
+    "multihop_accuracy_pct": 80.0,
+    "false_positive_chit_chat_pct": 80.0,
+    "avg_tokens_per_query": 18.0,
+    "total_benchmark_latency_ms": 0.06651878356933594
+  },
+  "System_D_EdgeMem_Complete": {
+    "multihop_accuracy_pct": 100.0,
+    "false_positive_chit_chat_pct": 0.0,
+    "avg_tokens_per_query": 13.910000000000002,
+    "total_benchmark_latency_ms": 327.67295837402344
+  }
+}
