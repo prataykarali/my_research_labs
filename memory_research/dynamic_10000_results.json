@@ -1,0 +1,33 @@
+{
+  "total_dynamic_turns_evaluated": 10000,
+  "smart_ingestion": {
+    "ephemeral_rejection_rate_pct": 70.0,
+    "permanent_retention_rate_pct": 100.0,
+    "ephemeral_noise_discarded_turns": 1050
+  },
+  "dynamic_knowledge_chaining": {
+    "multi_turn_chain_accuracy_pct": 84.92,
+    "chain_turns_tested": 2500
+  },
+  "temporal_conflict_reconciliation": {
+    "stale_edge_invalidation_rate_pct": 75.0,
+    "new_state_retrieval_accuracy_pct": 50.0,
+    "stale_conflict_leak_count": 375
+  },
+  "negative_cross_domain_protection": {
+    "unrelated_chit_chat_blocked_pct": 100.0,
+    "false_positive_injections": 0
+  },
+  "hard_edge_cases_boundary_analysis": {
+    "slang_and_colloquial_pass_rate_pct": 19.2,
+    "firewall_filtered_sub_threshold_pct": 80.8
+  },
+  "privacy_compliance": {
+    "post_wipe_zero_leak_rate_pct": 100.0,
+    "leaks_detected": 0
+  },
+  "performance": {
+    "mean_retrieval_latency_ms": 0.76,
+    "p95_retrieval_latency_ms": 1.33
+  }
+}

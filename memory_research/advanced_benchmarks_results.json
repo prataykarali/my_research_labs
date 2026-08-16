@@ -1,0 +1,63 @@
+{
+  "quantization": {
+    "FP32": {
+      "bytes_per_vector": 1536,
+      "total_kb_5000_nodes": 7500.0,
+      "cosine_fidelity": 1.0
+    },
+    "FP16": {
+      "bytes_per_vector": 768,
+      "total_kb_5000_nodes": 3750.0,
+      "cosine_fidelity": 1.0
+    },
+    "INT8": {
+      "bytes_per_vector": 392,
+      "total_kb_5000_nodes": 1914.0625,
+      "cosine_fidelity": 0.9999192953109741
+    }
+  },
+  "graph_hops": [
+    {
+      "hop_depth_k": 0,
+      "precision_pct": 100.0,
+      "tokens_injected": 6.2,
+      "traversal_latency_ms": 0.15
+    },
+    {
+      "hop_depth_k": 1,
+      "precision_pct": 99.2,
+      "tokens_injected": 14.5,
+      "traversal_latency_ms": 0.42
+    },
+    {
+      "hop_depth_k": 2,
+      "precision_pct": 94.5,
+      "tokens_injected": 28.0,
+      "traversal_latency_ms": 0.88
+    },
+    {
+      "hop_depth_k": 3,
+      "precision_pct": 68.4,
+      "tokens_injected": 64.2,
+      "traversal_latency_ms": 1.85
+    },
+    {
+      "hop_depth_k": 4,
+      "precision_pct": 41.2,
+      "tokens_injected": 142.0,
+      "traversal_latency_ms": 3.9
+    }
+  ],
+  "energy_and_compute": {
+    "flat_dump_kv_cache_mb": 21.9375,
+    "aura_kv_cache_mb": 0.73125,
+    "kv_cache_saving_pct": 96.66666666666667,
+    "flat_flops_per_token_mflops": 11.501568,
+    "aura_flops_per_token_mflops": 0.3833856,
+    "attention_compute_reduction_pct": 96.66666666666667
+  },
+  "topic_drift_stress_test": {
+    "turns_evaluated": 50,
+    "switching_accuracy_pct": 100.0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "total_queries": 10,
+  "passed": 7,
+  "accuracy_pct": 70.0,
+  "supported_kinds": [
+    "event",
+    "milestone",
+    "medical_incident",
+    "person",
+    "pref",
+    "work",
+    "topic",
+    "incident"
+  ],
+  "is_open_ontology": true
+}
